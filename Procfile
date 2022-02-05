@@ -1,1 +1,1 @@
-web: node server.js
+web: npm run json-server --watch ./src/assets/db.json --port=3001
