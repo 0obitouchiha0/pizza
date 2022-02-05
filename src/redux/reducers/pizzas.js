@@ -6,7 +6,7 @@ export const getPizzas = createAsyncThunk(
   'pizzas/fetchPizzas',
   async ({ category, sort }) => {
     const res = await axios
-      .get(`/pizzas?_sort=${sort}${category !== null ? `&category=${category}` : ''}`)
+      .get(`https://react-pizzzaa.herokuapp.com/pizzas?_sort=${sort}${category !== null ? `&category=${category}` : ''}`)
       .then(({ data }) => {
         return data;
       })
